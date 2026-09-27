@@ -4,6 +4,14 @@
 const modal = document.getElementById("contactModal");
 const closeBtn = document.querySelector(".contact__close");
 
+// NAV CONTACT TRIGGER
+const navContact = document.getElementById("navContact");
+navContact.addEventListener("click", (e) => {
+  e.preventDefault();
+  modal.style.display = "flex";
+});
+
+
 // FOOTER CONTACT TRIGGER
 const footerContact = document.getElementById("footerContact");
 footerContact.addEventListener("click", () => {
